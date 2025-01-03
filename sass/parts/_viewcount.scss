@@ -1,0 +1,29 @@
+.viewcount {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  margin: 24px 0;
+  background: var(--bg-1);
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: var(--text-color);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+
+  &::before {
+    content: '👁'; // eye emoji as a view icon
+    margin-right: 8px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .viewcount {
+    padding: 4px 10px;
+    margin: 18px 0;
+  }
+}
