@@ -20,10 +20,10 @@
         {% set show_comment = false %}
         {% endif %}
 
-        {% include "_viewcount_script.html" %}
         {% if show_comment %}
         <div class="viewcount"></div>
         <div class="giscus"></div>
+        {% include "_viewcount_script.html" %}
         {% include "_giscus_script.html" %}
         {% endif %}
     </div>

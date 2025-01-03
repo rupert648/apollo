@@ -32,4 +32,4 @@ async function countPageView() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", countPageView);
+countPageView();
